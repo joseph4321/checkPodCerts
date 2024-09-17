@@ -2,6 +2,7 @@
 This script will use a defined filter to log in to each cluster, namespace and pod that matches the filter, and check the defined certificate for upcoming expirations.  Since these certs are not exposed externally, this is the only way to verify upcoming cert expirations across multiple contexts/namespaces/pods.  A csv is provided at the end for easier consumption
 
 Example output:
+```text
 % ./checkPodCerts.sh
 Select environment to check:
 [1] Testnet/UAT
@@ -68,3 +69,4 @@ customer1-prod - customer1-api0-5c86fbd64f-ks6p2 - api0
 Cert will expire in 91 days
 
 ... etc ...
+```

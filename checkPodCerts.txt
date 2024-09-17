@@ -1,0 +1,201 @@
+% ./checkPodCerts.sh
+Select environment to check:
+[1] Testnet/UAT
+[2] Prod
+Select: 2
+ 
+Proceed? (Y/N): Y
+Proceeding...
+ 
+[+] Switching context...
+Updated context arn:aws:eks:us-west-2:$account:cluster/$cluster in /Users/joseph/.kube/config
+ 
+[+] Found:
+ 
+veris-customer-prod
+veris-customer1-prod
+veris-customer2-prod
+veris-customer3-prod
+veris-customer4-prod
+ 
+[+] Proceeding with command execution, filter is 'api|val'
+ 
+veris-customer-prod - customer-api2-d954874b5-pgmgt - api2
+-----------------------------------------
+Cert will expire in 378 days
+ 
+veris-customer-prod - customer-val2-0 - val2
+-----------------------------------------
+Cert will expire in 378 days
+ 
+veris-customer1-prod - customer1-api2-b8b965556-j4vmk - api2
+-----------------------------------------
+Cert will expire in 91 days
+ 
+veris-customer1-prod - customer1-val2-0 - val2
+-----------------------------------------
+Cert will expire in 91 days
+ 
+veris-customer2-prod - customer2-api2-7f7d766789-wm8jv - api2
+-----------------------------------------
+Cert will expire in 282 days
+ 
+veris-customer2-prod - customer2-val2-0 - val2
+-----------------------------------------
+Cert will expire in 282 days
+ 
+veris-customer3-prod - customer3-api2-5666cc6b4d-jxbd2 - api2
+-----------------------------------------
+Cert will expire in 314 days
+ 
+veris-customer3-prod - customer3-val2-0 - val2
+-----------------------------------------
+Cert will expire in 314 days
+ 
+veris-customer4-prod - customer4-api2-84c88789f5-jpf67 - api2
+-----------------------------------------
+Cert will expire in 378 days
+ 
+veris-customer4-prod - customer4-val2-0 - val2
+-----------------------------------------
+Cert will expire in 378 days
+ 
+[+] Switching context...
+Updated context arn:aws:eks:us-east-1:$account:cluster/$cluster in /Users/joseph/.kube/config
+ 
+[+] Found:
+ 
+veris-customer-prod
+veris-customer1-prod
+veris-customer2-prod
+veris-customer3-prod
+veris-customer4-prod
+ 
+[+] Proceeding with command execution, filter is 'api|val'
+ 
+veris-customer-prod - customer-api1-5c4d475f7b-88kk9 - api1
+-----------------------------------------
+Cert will expire in 378 days
+ 
+veris-customer-prod - customer-val1-0 - val1
+-----------------------------------------
+Cert will expire in 378 days
+ 
+veris-customer1-prod - customer1-api1-6968fbd888-9prhz - api1
+-----------------------------------------
+Cert will expire in 91 days
+ 
+veris-customer1-prod - customer1-val1-0 - val1
+-----------------------------------------
+Cert will expire in 91 days
+ 
+veris-customer2-prod - customer2-api1-65bc8f97b6-gq4dc - api1
+-----------------------------------------
+Cert will expire in 282 days
+ 
+veris-customer2-prod - customer2-val1-0 - val1
+-----------------------------------------
+Cert will expire in 282 days
+ 
+veris-customer3-prod - customer3-api1-7df778c5c8-7zght - api1
+-----------------------------------------
+Cert will expire in 314 days
+ 
+veris-customer3-prod - customer3-val1-0 - val1
+-----------------------------------------
+Cert will expire in 314 days
+ 
+veris-customer4-prod - customer4-api1-6dd658d968-kd65p - api1
+-----------------------------------------
+Cert will expire in 378 days
+ 
+veris-customer4-prod - customer4-val1-0 - val1
+-----------------------------------------
+Cert will expire in 378 days
+ 
+[+] Switching context...
+Updated context arn:aws:eks:us-east-2:$account:cluster/$cluster in /Users/joseph/.kube/config
+ 
+[+] Found:
+ 
+veris-customer-prod
+veris-customer1-prod
+veris-customer2-prod
+veris-customer3-prod
+veris-customer4-prod
+ 
+[+] Proceeding with command execution, filter is 'api|val'
+ 
+veris-customer-prod - customer-api0-56f9c9dcd9-ml9zj - api0
+-----------------------------------------
+Cert will expire in 378 days
+ 
+veris-customer-prod - customer-val0-0 - val0
+-----------------------------------------
+Cert will expire in 378 days
+ 
+veris-customer1-prod - customer1-api0-5c86fbd64f-ks6p2 - api0
+-----------------------------------------
+Cert will expire in 91 days
+ 
+veris-customer1-prod - customer1-val0-0 - val0
+-----------------------------------------
+Cert will expire in 91 days
+ 
+veris-customer2-prod - customer2-api0-585c6c96c5-cxcph - api0
+-----------------------------------------
+Cert will expire in 282 days
+ 
+veris-customer2-prod - customer2-val0-0 - val0
+-----------------------------------------
+Cert will expire in 282 days
+ 
+veris-customer3-prod - customer3-api0-69474b9764-8pptn - api0
+-----------------------------------------
+Cert will expire in 314 days
+ 
+veris-customer3-prod - customer3-val0-0 - val0
+-----------------------------------------
+Cert will expire in 314 days
+ 
+veris-customer4-prod - customer4-api0-db46496b4-vm587 - api0
+-----------------------------------------
+Cert will expire in 378 days
+ 
+veris-customer4-prod - customer4-val0-0 - val0
+-----------------------------------------
+Cert will expire in 378 days
+ 
+ 
+Hope you had fun, csv is:
+namespace,pod,container,expiration date,days until expiration,region,account,cluster
+veris-customer-prod,customer-api2-d954874b5-pgmgt,api2,Feb 17 01:30:27 2024 GMT,378,us-west-2,932807287870,cluster/customer-us-west-2-cluster
+veris-customer-prod,customer-val2-0,val2,Feb 17 01:30:24 2024 GMT,378,us-west-2,932807287870,cluster/customer-us-west-2-cluster
+veris-customer1-prod,customer1-api2-b8b965556-j4vmk,api2,May  5 20:04:17 2023 GMT,91,us-west-2,932807287870,cluster/customer-us-west-2-cluster
+veris-customer1-prod,customer1-val2-0,val2,May  5 20:03:33 2023 GMT,91,us-west-2,932807287870,cluster/customer-us-west-2-cluster
+veris-customer2-prod,customer2-api2-7f7d766789-wm8jv,api2,Nov 12 19:46:49 2023 GMT,282,us-west-2,932807287870,cluster/customer-us-west-2-cluster
+veris-customer2-prod,customer2-val2-0,val2,Nov 12 19:48:27 2023 GMT,282,us-west-2,932807287870,cluster/customer-us-west-2-cluster
+veris-customer3-prod,customer3-api2-5666cc6b4d-jxbd2,api2,Dec 15 14:06:24 2023 GMT,314,us-west-2,932807287870,cluster/customer-us-west-2-cluster
+veris-customer3-prod,customer3-val2-0,val2,Dec 15 14:06:26 2023 GMT,314,us-west-2,932807287870,cluster/customer-us-west-2-cluster
+veris-customer4-prod,customer4-api2-84c88789f5-jpf67,api2,Feb 17 01:33:22 2024 GMT,378,us-west-2,932807287870,cluster/customer-us-west-2-cluster
+veris-customer4-prod,customer4-val2-0,val2,Feb 17 01:33:24 2024 GMT,378,us-west-2,932807287870,cluster/customer-us-west-2-cluster
+veris-customer-prod,customer-api1-5c4d475f7b-88kk9,api1,Feb 17 01:30:24 2024 GMT,378,us-east-1,932807287870,cluster/customer-us-east-1-cluster
+veris-customer-prod,customer-val1-0,val1,Feb 17 01:30:21 2024 GMT,378,us-east-1,932807287870,cluster/customer-us-east-1-cluster
+veris-customer1-prod,customer1-api1-6968fbd888-9prhz,api1,May  5 20:04:05 2023 GMT,91,us-east-1,932807287870,cluster/customer-us-east-1-cluster
+veris-customer1-prod,customer1-val1-0,val1,May  5 20:03:51 2023 GMT,91,us-east-1,932807287870,cluster/customer-us-east-1-cluster
+veris-customer2-prod,customer2-api1-65bc8f97b6-gq4dc,api1,Nov 12 19:46:20 2023 GMT,282,us-east-1,932807287870,cluster/customer-us-east-1-cluster
+veris-customer2-prod,customer2-val1-0,val1,Nov 12 19:48:03 2023 GMT,282,us-east-1,932807287870,cluster/customer-us-east-1-cluster
+veris-customer3-prod,customer3-api1-7df778c5c8-7zght,api1,Dec 15 14:06:25 2023 GMT,314,us-east-1,932807287870,cluster/customer-us-east-1-cluster
+veris-customer3-prod,customer3-val1-0,val1,Dec 15 14:06:23 2023 GMT,314,us-east-1,932807287870,cluster/customer-us-east-1-cluster
+veris-customer4-prod,customer4-api1-6dd658d968-kd65p,api1,Feb 17 01:33:23 2024 GMT,378,us-east-1,932807287870,cluster/customer-us-east-1-cluster
+veris-customer4-prod,customer4-val1-0,val1,Feb 17 01:33:22 2024 GMT,378,us-east-1,932807287870,cluster/customer-us-east-1-cluster
+veris-customer-prod,customer-api0-56f9c9dcd9-ml9zj,api0,Feb 17 01:30:21 2024 GMT,378,us-east-2,932807287870,cluster/customer-us-east-2-cluster
+veris-customer-prod,customer-val0-0,val0,Feb 17 01:30:20 2024 GMT,378,us-east-2,932807287870,cluster/customer-us-east-2-cluster
+veris-customer1-prod,customer1-api0-5c86fbd64f-ks6p2,api0,May  5 20:04:42 2023 GMT,91,us-east-2,932807287870,cluster/customer-us-east-2-cluster
+veris-customer1-prod,customer1-val0-0,val0,May  5 20:04:31 2023 GMT,91,us-east-2,932807287870,cluster/customer-us-east-2-cluster
+veris-customer2-prod,customer2-api0-585c6c96c5-cxcph,api0,Nov 12 19:45:43 2023 GMT,282,us-east-2,932807287870,cluster/customer-us-east-2-cluster
+veris-customer2-prod,customer2-val0-0,val0,Nov 12 19:47:21 2023 GMT,282,us-east-2,932807287870,cluster/customer-us-east-2-cluster
+veris-customer3-prod,customer3-api0-69474b9764-8pptn,api0,Dec 15 14:06:26 2023 GMT,314,us-east-2,932807287870,cluster/customer-us-east-2-cluster
+veris-customer3-prod,customer3-val0-0,val0,Dec 15 14:06:24 2023 GMT,314,us-east-2,932807287870,cluster/customer-us-east-2-cluster
+veris-customer4-prod,customer4-api0-db46496b4-vm587,api0,Feb 17 01:33:24 2024 GMT,378,us-east-2,932807287870,cluster/customer-us-east-2-cluster
+veris-customer4-prod,customer4-val0-0,val0,Feb 17 01:33:23 2024 GMT,378,us-east-2,932807287870,cluster/customer-us-east-2-cluster
